@@ -1,0 +1,240 @@
+/* -------- General styles ---------  */
+
+h1, h2, h3, h4{
+	/*font-family: 'Fjalla One', sans-serif;*/
+  font-family: 'Source Serif Pro', serif;
+}
+
+h1{
+	color: #47adcb;
+}
+img{
+  align-items: center;
+  justify-content: space-between;
+}
+.allign-center{
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  height: 800px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  justify-content:space-between ;
+}
+.bg{
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  bottom: -1px;
+  z-index: 1;
+  background-image: url('../img/images-1.jpg');
+  filter: blur(10px);
+  background-size: cover;
+}
+.btn-first{
+margin-top: 100px;
+position: fixed;
+}
+
+.text-main{
+margin-right: 275px;
+}
+
+.about_us{
+  margin-top: 100px;
+}
+
+.divider{
+	background-image: url('../img/divider-pattern.png');
+	background-repeat: repeat-x;;
+	height: 4px;
+	width: 100%;
+}
+
+/* -------- Top navbar styles ---------  */
+
+.navbar .brand{
+	/*font-family: 'Merienda', cursive;*/
+	font-size: 28px; 
+  font-family: 'Source Serif Pro', serif;
+}
+
+/* -------- Carousel styles ---------  */
+
+
+/* -------- Page styles ---------  */
+
+#heading, #screenshots, #features, #download{
+	text-align: center;
+	padding:50px 0;
+}
+
+#about div.row{
+	padding:50px 0;
+  text-align: center;
+}
+
+#screenshots h1{
+	padding-bottom: 30px; 
+}
+
+/* -------- Footer styles ---------  */
+
+footer{
+	background-color: #1b1b1b;
+	color: #999999;
+  border-radius: 5px;
+ padding:0 300px 0 100px;
+}
+
+footer .span12{
+	text-align: center;
+}
+
+.ender-footer{
+  margin-top: 20px;
+}
+figure {
+  width: 30%; /* Ширина области */
+  height: 500px; /* Высота области */
+  margin: 0; /* Обнуляем отступы */
+  margin-top: 150px;
+
+  
+ }
+ figure img { 
+  width: 100%; /* Ширина изображений */
+  height: 100%; /* Высота изображении */
+  margin-left: 200px;
+  object-fit: cover; /* Вписываем фотографию в область */
+  
+ }
+
+ .swiper-container {
+  margin:0;
+  width: 1200px;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+.swiper-slide{
+  margin-right: 20px;
+}
+.img-polaroid{
+  width: 250%;
+  height: 400px;
+  object-fit: cover;
+}
+.span6{
+  text-align: center;
+  margin-left: 270px;
+}
+
+ /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+
+      .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+		padding-top: 15px;
+	}
+
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 500px;
+      }
+
+      footer {
+      	margin-left: -20px;
+		margin-right: -20px;
+      }
+
+      footer .container{
+      	margin-left: 10px;
+		margin-right: 10px;
+      }
+    
+    }
+
+
+    @media (max-width: 767px) {
+
+    	.navbar .brand{
+			font-family: 'Merienda', cursive;
+			font-size: 24px; 
+		}
+
+    	.carousel {
+			margin-left: -20px;
+			margin-right: -20px;
+		}
+
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 100px;
+        top: 50px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 16px;
+      }
+
+      #screenshots .span2{
+      	padding-bottom: 10px;
+      }
+
+    }
+
+    @media (max-width: 480px) {
+
+    .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 55%;
+        padding: 0 100px;
+        position: absolute;
+        top: 50px;
+      }
+      .carousel-caption h1 {
+        font-size: 20px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 14px;
+      }
+
+
+      .inline li{
+      	padding-bottom: 10px;
+      }
+
+      .form-inline button{
+      	margin-top: 10px;
+      }
+    }
