@@ -35,13 +35,13 @@ img{
   filter: blur(10px);
   background-size: cover;
 }
-.btn-first{
-margin-top: 100px;
-position: fixed;
-}
 
 .text-main{
+margin-top: 200px;
 margin-right: 275px;
+width: 800px;
+height: 250px;
+
 }
 
 .about_us{
@@ -68,7 +68,14 @@ margin-right: 275px;
 
 /* -------- Page styles ---------  */
 
-#heading, #screenshots, #features, #download{
+#heading{
+  text-align: center;
+	padding:50px 0 0 0;
+}
+
+
+
+#screenshots, #features, #download{
 	text-align: center;
 	padding:50px 0;
 }
@@ -124,6 +131,13 @@ figure {
 .swiper-slide{
   margin-right: 20px;
 }
+
+.img-polar{
+  border-radius: 5px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
 .img-polaroid{
   width: 250%;
   height: 400px;
@@ -133,7 +147,10 @@ figure {
   text-align: center;
   margin-left: 270px;
 }
-
+.lod{
+      font-size: 38px;
+      text-shadow:1px 1px 1px #000;
+    }
  /* RESPONSIVE CSS
     -------------------------------------------------- */
 
@@ -159,7 +176,7 @@ figure {
 
       footer {
       	margin-left: -20px;
-		margin-right: -20px;
+	    	margin-right: -20px;
       }
 
       footer .container{
@@ -169,6 +186,7 @@ figure {
     
     }
 
+    
 
     @media (max-width: 767px) {
 
